@@ -1,0 +1,210 @@
+{
+  "basics": {
+    "name": "Eric manosalva",
+    "label": "Frontend Developer con 8 años creando experiencias web escalables y de alto rendimiento.",
+    "image": "https://avatars.githubusercontent.com/u/9602714?v=4",
+    "email": "ramses.manosalva@gmail.com",
+    "phone": "+57 3167817861",
+    "url": "",
+    "summary": "Frontend Developer with more than 7 years of experience specialized in creating fast and engaging web solutions. With a strong background in React, Vue, Git, Github, Unit Testing and E2E Testing to ensure code quality. Self-taught, combined with a passion for web development, drives me to deliver custom and high quality solutions. Committed to excellence and continuous learning to contribute to the success of each project",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Valledupar",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "eric-manosalva",
+        "url": "https://www.linkedin.com/in/eric-manosalva/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ericko15",
+        "url": "https://github.com/ericko15"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Allan Solutions",
+      "position": "Senior Frontend Developer",
+      "url": "https://company.com",
+      "startDate": "2023-01-01",
+      "endDate": null,
+      "summary": "In my current role at Allan Solutions as a Senior Frontend Developer, I have significantly contributed to the creation of innovative web solutions. I specialize in cutting-edge technologies with a particular focus on Data Analysis and Reporting Systems for the Electric Vehicles and Digital Marketing industries. This experience has significantly expanded and strengthened my technical skills and data analysis capabilities.",
+      "highlights": [],
+      "remote": true
+    },
+    {
+      "name": "Omni PRO",
+      "position": "Mid Frontend Developer",
+      "url": "https://company.com",
+      "startDate": "2022-01-01",
+      "endDate": "2023-01-01",
+      "summary": "During my time at Omni.PRO as a Mid Frontend Developer, I had the opportunity to work with leading-edge technologies such as Angular 14 and Vue 3. I highlighted my collaboration in OMS where I contributed to the development of a web platform for service management and a mobile application for load control. This experience allowed me to strengthen my skills in cutting-edge technologies and innovative problem-solving within multidisciplinary teams.",
+      "highlights": [],
+      "remote": true
+    },
+    {
+      "name": "Celerik",
+      "position": "Mid Frontend Developer",
+      "url": "https://company.com",
+      "startDate": "2021-01-01",
+      "endDate": "2022-01-01",
+      "summary": "As a Mid Frontend Developer, I contributed to several projects using React.js. In TeamClass, I led the creation of an online course purchasing platform. In Prospective, I collaborated on the development of a platform to manage public transport. In Mantial, I participated in the design of an NFT marketplace. In Creators Legal, I contributed to a platform for digital contracts. These experiences allowed me to expand my skills as a Frontend Developer and work with cutting-edge technologies.",
+      "highlights": [],
+      "remote": true
+    },
+    {
+      "name": "Citixen",
+      "position": "Frontend Lead",
+      "url": "https://company.com",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "summary": "At Citixen, I served as a team leader and Frontend Developer where I worked with React.js on various web projects. In the Citixen Administration, I collaborated on a platform to manage urban courier companies. Additionally, I participated in the development of a web application to order and track urban courier services for the Citixen Client. These experiences allowed me to expand my leadership and front-end development skills using innovative technologies.",
+      "highlights": [],
+      "remote": false
+    },
+    {
+      "name": "FZ Academia",
+      "position": "Frontend Developer",
+      "url": "https://company.com",
+      "startDate": "2017-01-01",
+      "endDate": "2019-01-01",
+      "summary": "At FZ Academia, I worked as a Frontend Developer specializing in React.js for various platforms. I collaborated on the creation of a musical e-learning platform in FZ Academia Admin and developed an informational website about the courses. These experiences strengthened my front-end development skills and allowed me to work with diverse technologies on educational and informational projects.",
+      "highlights": [],
+      "remote": true
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Uparsistem",
+      "url": "https://institution.com/",
+      "area": "Information systems analysis and development technician",
+      "studyType": "Bachelor",
+      "startDate": "2010-01-01",
+      "endDate": "2012-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["JavaScript"]
+    },
+    {
+      "name": "Angular 13+",
+      "level": "Intermediate",
+      "keywords": ["Angular 13", "Angular"]
+    },
+    {
+      "name": "React JS",
+      "level": "Master",
+      "keywords": ["React", "React JS"]
+    },
+    {
+      "name": "Vue 3",
+      "level": "Master",
+      "keywords": ["Vue", "Vue 3"]
+    },
+    {
+      "name": "HTML5",
+      "level": "Master",
+      "keywords": ["HTML", "HTML5"]
+    },
+    {
+      "name": "CSS3",
+      "level": "Master",
+      "keywords": ["CSS", "CSS3"]
+    },
+    {
+      "name": "NuxtJs",
+      "level": "Master",
+      "keywords": ["NuxtJs", "Nuxt"]
+    },
+    {
+      "name": "NextJs",
+      "level": "Master",
+      "keywords": ["NextJs", "Next.js"]
+    },
+    {
+      "name": "Redux",
+      "level": "Master",
+      "keywords": ["NextJs", "Next.js"]
+    },
+    {
+      "name": "Pinia",
+      "level": "Master",
+      "keywords": ["NextJs", "Next.js"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    }
+  ]
+}

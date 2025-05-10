@@ -1,0 +1,44 @@
+---
+import Section from './Section.astro'
+import { work } from '@/cv.json'
+import dayjs from 'dayjs'
+
+const experience = [...work].map((job) => {
+  const startYear = dayjs(job.startDate).year()
+  const endYear = job.endDate != null ? dayjs(job.endDate).year() : 'Present'
+
+  return {
+    ...job,
+    startYear,
+    endYear,
+  }
+})
+---
+
+<Section title="Work Experience">
+  <div class="flex flex-col gap-4">
+    {
+      experience.map((job) => (
+        <div class="flex flex-col gap-y-1">
+          <div class="flex justify-between items-center">
+            <div>
+              <div class="flex items-center gap-x-2">
+                <h3 class="font-semibold">{job.name}</h3>
+                {job.remote && (
+                  <span class="text-xs font-semibold bg-gray-200 text-neutral-700 rounded px-1 py-0.5">
+                    Remote
+                  </span>
+                )}
+              </div>
+            </div>
+            <span class="text-neutral-500 font-semibold text-sm">
+              {job.startYear} - {job.endYear}
+            </span>
+          </div>
+          <h4 class="text-neutral-500">{job.position}</h4>
+          <p class="text-neutral-500">{job.summary}</p>
+        </div>
+      ))
+    }
+  </div>
+</Section>

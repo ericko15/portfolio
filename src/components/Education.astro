@@ -1,0 +1,35 @@
+---
+import { education } from '@/cv.json'
+import Section from './Section.astro'
+import dayjs from 'dayjs'
+
+const schools = education.map((school) => {
+  const startYear = dayjs(school.startDate).year()
+  const endYear =
+    school.endDate != null ? dayjs(school.endDate).year() : 'Present'
+
+  return {
+    ...school,
+    startYear,
+    endYear,
+  }
+})
+---
+
+<Section title="Education">
+  <div class="flex flex-col gap-4">
+    {
+      schools.map((job) => (
+        <div class="flex flex-col gap-y-1.5">
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold ">{job.institution}</h3>
+            <span class="text-neutral-500 font-semibold text-sm">
+              {job.startYear} - {job.endYear}
+            </span>
+          </div>
+          <p class="text-neutral-500">{job.area}</p>
+        </div>
+      ))
+    }
+  </div>
+</Section>

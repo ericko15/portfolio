@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets'
+import { basics } from '@/cv.json'
+import Mail from '@/assets/mail.svg'
+import Phone from '@/assets/phone.svg'
+import LinkedIn from '@/assets/linkedin.svg'
+import GitHub from '@/assets/github.svg'
+import Globe from '@/assets/globe.svg'
+
+const { name, label, image, location, profiles, phone, email } = basics
+const linkedin = profiles.find((profile) => profile.network === 'LinkedIn')
+const github = profiles.find((profile) => profile.network === 'GitHub')
+const { city, region } = location
+
+const links = [
+  {
+    name: 'Email',
+    href: `mailto:${email}`,
+    printer: email,
+    target: '_blank',
+    title: `Enviar un correo electronico a ${name} al correo ${email}`,
+    class: 'hover:bg-[#DB4437] hover:border-[#DB4437] hover:text-white',
+    icon: Mail,
+  },
+  {
+    name: 'Phone',
+    href: `tel:${phone}`,
+    printer: phone,
+    target: '_blank',
+    title: `Llamar a ${name} al telefono ${phone}`,
+    class: 'hover:bg-[#4285F4] hover:border-[#4285F4] hover:text-white',
+    icon: Phone,
+  },
+  {
+    name: 'LinkedIn',
+    href: linkedin?.url,
+    printer: linkedin?.url,
+    target: '_blank',
+    title: `Visitar el perfil de LinkedIn de ${name}`,
+    class: 'hover:bg-[#0077B5] hover:border-[#0077B5] hover:text-white',
+    icon: LinkedIn,
+  },
+  {
+    name: 'GitHub',
+    href: github?.url,
+    printer: github?.url,
+    target: '_blank',
+    title: `Visitar el perfil de GitHub de ${name}`,
+    class: 'hover:bg-[#181717] hover:border-[#181717] hover:text-white',
+    icon: GitHub,
+  },
+]
+---
+
+<section class="flex gap-x-6 justify-between items-center">
+  <div class="flex flex-col gap-y-1.5">
+    <h1 class="text-3xl font-bold">{name}</h1>
+    <h2 class="text-neutral-500">{label}</h2>
+    <div class="flex items-center gap-2 text-neutral-500">
+      <Globe class="size-3.5" />
+      <span class="text-sm">
+        {city}, {region}
+      </span>
+    </div>
+    <footer class="flex gap-1 print:hidden">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            target={link.target}
+            title={link.title}
+            rel="noopener noreferrer"
+            class:list={[
+              'p-1 rounded border border-gray-600 text-gray-600 transition-colors size-8 flex items-center justify-center',
+              link.class,
+            ]}
+          >
+            <link.icon class="size-4" />
+          </a>
+        ))
+      }
+    </footer>
+    <footer class="flex gap-1 flex-wrap not-print:hidden text-xs">
+      {links.map((link) => link.printer).join(' • ')}
+    </footer>
+  </div>
+  <figure class="max-w-32 w-full h-full rounded overflow-hidden aspect-square">
+    <Image src={image} alt={`Foto de ${name}`} width="200" height="200" />
+  </figure>
+</section>

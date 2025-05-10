@@ -1,0 +1,16 @@
+---
+import { skills } from '@/cv.json'
+import Section from './Section.astro'
+---
+
+<Section title="Skills">
+  <div class="flex gap-2 flex-wrap">
+    {
+      skills.map((skill) => (
+        <h3 class="font-semibold leading-[normal] px-2 py-0.5 text-sm bg-gray-800 text-gray-100 rounded">
+          {skill.name}
+        </h3>
+      ))
+    }
+  </div>
+</Section>
